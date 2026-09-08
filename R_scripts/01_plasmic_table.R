@@ -363,7 +363,7 @@ plasmic_summary_all <- patient_level %>%
     ),
 
     ########################################################
-    # ADAMTS13 measurements
+    # ADAMTS13 testing
     ########################################################
 
     adam_n =
@@ -519,7 +519,7 @@ plasmic_summary_sepsis <- patient_level %>%
     ),
 
     ########################################################
-    # ADAMTS13 measurements
+    # ADAMTS13 testing
     ########################################################
 
     adam_n =
@@ -643,7 +643,7 @@ plasmic_summary_nonsepsis <- patient_level %>%
   summarise(
 
     ########################################################
-    # 患者数
+    # Nubber of patients
     ########################################################
 
     n_patients = n(),
@@ -675,7 +675,7 @@ plasmic_summary_nonsepsis <- patient_level %>%
     ),
 
     ########################################################
-    # ADAMTS13測定
+    # ADAMTS13 testing
     ########################################################
 
     adam_n =
@@ -701,7 +701,7 @@ plasmic_summary_nonsepsis <- patient_level %>%
       ),
 
     ########################################################
-    # PE施行患者のうち肝不全
+    # Hepatic failure in PE
     ########################################################
 
     pe_hepatic_n =
@@ -1056,7 +1056,7 @@ plasmic_summary_sepsis_jaam_ge4 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12f. Aggregate by PLASMIC score PLASMIC score（stratified by platelet）
+# 12f. Aggregate by PLASMIC score（stratified by platelet）
 ############################################################
 
 plasmic_summary_all_pt_lt30000 <- patient_level %>%
@@ -1191,7 +1191,7 @@ plasmic_summary_all_pt_ge30000 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12g. Aggregate by PLASMIC score PLASMIC score（sepsis・stratified by platelet）
+# 12g. Aggregate by PLASMIC score（sepsis, stratified by platelet）
 ############################################################
 
 plasmic_summary_sepsis_pt_lt30000 <- patient_level %>%
@@ -1329,7 +1329,7 @@ plasmic_summary_sepsis_pt_ge30000 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12h. Aggregate by PLASMIC score PLASMIC score（non-sepsis・stratified by platelet）
+# 12h. Aggregate by PLASMIC score（non-sepsis, stratified by platelet）
 ############################################################
 
 plasmic_summary_nonsepsis_pt_lt30000 <- patient_level %>%
