@@ -215,7 +215,7 @@ table1_out <- replace_row(table1_out, "LDH, U/L", "ld_max", 0)
 table1_out <- replace_row(table1_out, "APACHE II score", "apache2_score", 0)
 table1_out <- replace_row(table1_out, "SOFA score", "sofa_max", 0)
 
-# Print（with SMD）
+# Print (with SMD)
 print(
   table1_out,
   showAllLevels = TRUE,

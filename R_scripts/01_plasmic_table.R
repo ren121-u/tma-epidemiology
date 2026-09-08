@@ -141,7 +141,7 @@ drug_patient <- df %>%
   )
 
 ############################################################
-# 7c. Any Treatment flag
+# 7c. Any treatment flag
 ############################################################
 
 treatment_patient <- df %>%
@@ -215,7 +215,7 @@ hospital_mortality_patient <- df %>%
   )
 
 ############################################################
-# 11. Data per patients
+# 11. Data per patient
 ############################################################
 
 patient_level <- plasmic_worst %>%
@@ -643,7 +643,7 @@ plasmic_summary_nonsepsis <- patient_level %>%
   summarise(
 
     ########################################################
-    # Nubber of patients
+    # Number of patients
     ########################################################
 
     n_patients = n(),
@@ -783,7 +783,7 @@ plasmic_summary_nonsepsis <- patient_level %>%
   arrange(plasmic_worst) 
 
 ############################################################
-# 12d. Aggregate by PLASMIC score（stratified by JAAM）
+# 12d. Aggregate by PLASMIC score (stratified by JAAM)
 ############################################################
 
 plasmic_summary_all_jaam_lt4 <- patient_level %>%
@@ -918,7 +918,7 @@ plasmic_summary_all_jaam_ge4 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12e. Aggregate by PLASMIC score（sepsis, stratified by JAAM）
+# 12e. Aggregate by PLASMIC score (sepsis, stratified by JAAM)
 ############################################################
 
 plasmic_summary_sepsis_jaam_lt4 <- patient_level %>%
@@ -1056,7 +1056,7 @@ plasmic_summary_sepsis_jaam_ge4 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12f. Aggregate by PLASMIC score（stratified by platelet）
+# 12f. Aggregate by PLASMIC score (stratified by platelet)
 ############################################################
 
 plasmic_summary_all_pt_lt30000 <- patient_level %>%
@@ -1191,7 +1191,7 @@ plasmic_summary_all_pt_ge30000 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12g. Aggregate by PLASMIC score（sepsis, stratified by platelet）
+# 12g. Aggregate by PLASMIC score (sepsis, stratified by platelet)
 ############################################################
 
 plasmic_summary_sepsis_pt_lt30000 <- patient_level %>%
@@ -1329,7 +1329,7 @@ plasmic_summary_sepsis_pt_ge30000 <- patient_level %>%
   arrange(plasmic_worst)
 
 ############################################################
-# 12h. Aggregate by PLASMIC score（non-sepsis, stratified by platelet）
+# 12h. Aggregate by PLASMIC score (non-sepsis, stratified by platelet)
 ############################################################
 
 plasmic_summary_nonsepsis_pt_lt30000 <- patient_level %>%

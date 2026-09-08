@@ -22,7 +22,7 @@ The tma-epidemiology repository includes:
 1. SQL code to extract PLASMIC scores, ADAMTS13 testing, diagnoses, and mortality from the OneICU database.
 2. R scripts to create the main descriptive table and the baseline characteristics table.
 
-The study population consists of patients admitted to 6 ICUs in Japan between 2018 and December 2025, where ADAMTS13 test was available. The following patients are excluded:
+The study population consists of patients admitted to 6 ICUs in Japan where ADAMTS13 testing was available, between 2018 and December 2025. The following patients are excluded:
 
 1. patients younger than 18 years; and
 2. patients whose ICU admission is not their first.
