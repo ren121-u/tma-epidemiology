@@ -69,7 +69,7 @@ R scripts to create the main descriptive table and the baseline characteristics 
 1. Google BigQuery Access
     - To run the SQL scripts, you will need access to Google BigQuery and appropriate credentials to query the OneICU database.
 2. R
-    - R (version 4.4 or higher recommended).
+    - R (version 4.6 or higher recommended).
 3. R Packages
     - `tidyverse` (including `dplyr` and `tidyr`), `mgcv`, and `tableone`.
 
