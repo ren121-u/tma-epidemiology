@@ -16,7 +16,9 @@ with
           icd10,
         from `medicu-beta.latest_one_icu_derived.extended_icu_stays`
         left join `medicu-beta.latest_one_icu.hospital_admission_diagnoses` using (hospital_admission_id)
-        where timestamp_diff(in_time, disease_end_date, minute) <= 0
+        where timestamp_diff(disease_start_date, out_time, minute) <= 0
+          and (disease_end_date is null
+            or timestamp_diff(in_time, disease_end_date, minute) <= 0)
       ),
       union_diagnoses as (
         select 
